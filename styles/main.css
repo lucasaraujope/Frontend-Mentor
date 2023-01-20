@@ -1,0 +1,236 @@
+.container{
+    margin: 2em 1em 2em 1em;
+    width: auto;
+    background-color: var(--branco);
+    z-index: 99;
+    border-radius: 0 0 10px 10px;
+    padding: 0.1em;
+}
+
+/*retirando o a imagem do desktop do mobile */
+.imagem__desktop{
+    display: none;
+}
+
+.imagem__mobile {
+    width: 100%;
+    border-radius: 10px 10px 0 0px;
+    display: block;
+}
+
+/*texto com informações do produto no cart*/
+
+.container__informacoes{
+    display: grid;
+    margin: 2em;
+    row-gap: 8px;
+    display: block;
+}
+
+/*Retirando texto com informações do mobile*/
+.container__informacoes-desktop{
+    display: none;
+}
+
+/*Retirando texto com informações do mobile*/
+.categoria-desktop{
+    display: none;
+}
+
+
+.categoria-mobile{
+    font-family: var(--fonte-Montserrat);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 1.5em;
+    color: var(--cinza-claro);
+    font-size: 14px;
+    display: block;
+}
+
+.titulo__desktpop{
+    display: none;
+}
+
+.titulo__mobile{
+    font-size: 35px;
+    font-family: var(--fonte-Fraunces);
+    font-weight: 700;
+    color: var(--azul-titulo);
+    display: block;
+}
+
+.informacao__principal-mobile{
+    font-size: 14px;
+    padding: 0.5em 0;
+    font-family: var(--fonte-Montserrat);
+    color: var(--cinza-claro);
+    line-height: 24px;
+    margin-top: 0.2em;
+    display: block;
+}
+
+.container__preco{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.preco__desconto-desktop{
+    display: none;
+}
+
+.preco__desconto-mobile{
+    display: flex;
+    font-family: var(--fonte-Fraunces);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--verde-botao);
+    margin: 0.5em 0;
+    display: block;
+}
+
+.preco__real-desktop{
+    display: none;
+}
+
+.preco__real-mobile {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5em;
+    text-decoration: line-through;
+    color: var(--cinza-claro);
+    display: block;
+}
+
+.container__botao-desktop {
+    display: none;
+}
+
+.container__botao-mobile{
+    width: 100%;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--verde-botao);
+    color: var(--branco);
+    font-family: var(--fonte-Montserrat);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1em 0;
+    display: block;
+
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 15em 20em;
+        border-radius: 10px 10px 10px 10px;
+        padding: 0;
+    }
+
+    .imagem__mobile {
+        display: none;
+    }
+
+    .imagem__desktop{
+        display: block;
+        width: 100%;
+        border-radius: 10px 0 0 10px ;
+    }
+    
+    .container__informacoes{
+        display: grid;
+    }
+
+    .container__informacoes-desktop{
+        display: block;
+    }
+
+    .categoria-desktop {
+        display: grid;
+        display: block;
+    }
+
+    .titulo__mobile{
+        display: none;
+    }
+    
+    .titulo__desktop{
+        font-size: 48px;
+        font-family: var(--fonte-Fraunces);
+        font-weight: 700;
+        color: var(--azul-titulo);
+        display: block;
+        margin-bottom: 0.2em;
+    }
+
+    .informacao__principal-mobile{
+        display: none;
+    }
+
+    .informacao__principal-desktop{
+        font-size: 18px;
+        color: var(--cinza-claro);
+        line-height: 28px;
+        display: block;
+    }
+
+    .container__preco{
+        display:flex ;
+        margin-bottom: 0;
+    }
+    
+    .preco__desconto-mobile{
+        display: none;
+    }
+
+    .preco__desconto-desktop{
+        font-family: var(--fonte-Fraunces);
+        font-size: 43px;
+        font-weight: 700;
+        color: var(--verde-botao);
+        margin: 0.5em 0;
+        display: block;
+    }
+
+    .preco__real-mobile{
+        display: none;
+    }
+    
+    .preco__real-desktop {
+        display: flex;
+        align-items: center;
+        padding-left: 1.6em;
+        text-decoration: line-through;
+        color: var(--cinza-claro);
+        display: block;
+    }
+
+    .container__botao-mobile{
+        display: none;
+    }
+
+    .container__botao-desktop{
+        width: 100%;
+        margin: 0.5em 0; 
+        border: none;
+        border-radius: 7px;
+        background-color: var(--verde-botao);
+        color: var(--branco);
+        font-family: var(--fonte-Montserrat);
+        font-size: 20px;
+        padding: 24px;
+        font-weight: 700;
+        display: block;
+    }
+
+    .container__botao-desktop:active{
+        background-color: darkgreen;
+        transition: 0.5;
+    }
+}
+
+
